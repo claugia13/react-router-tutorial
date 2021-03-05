@@ -10,8 +10,11 @@ function App() {
     <Router>
     <div className="App">
       <Nav />
+      <Switch>
+      <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/shop" component={Shop} />
+      </Switch>
     </div>
     </Router>
   );
